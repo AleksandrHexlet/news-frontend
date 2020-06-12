@@ -1,0 +1,12 @@
+.about-author__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin: 0 0 24px;
+  max-width: 590px;
+}
+
+.about-author__text:last-of-type {
+  margin-bottom: 0;
+}

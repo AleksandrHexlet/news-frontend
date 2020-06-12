@@ -1,0 +1,13 @@
+@import url('./__title/cards__title.css');
+@import url('./__list/cards__list.css');
+@import url('./__button/cards__button.css');
+@import url('./__button/_hidden/cards__button_hidden.css');
+@import url('./card/card.css');
+
+.cards {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: #1a1b22;
+  /* display: none; */
+  flex-direction: column;
+  padding: 80px 104px;
+}

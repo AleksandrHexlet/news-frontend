@@ -1,0 +1,18 @@
+@keyframes hover-mark-button {
+  0% {
+    stroke: #b6bcbf;
+  }
+  100% {
+    stroke: #1a1b22;
+  }
+}
+
+.card__button_mark {
+  stroke: #b6bcbf;
+  stroke-width: 2;
+  fill: transparent;
+}
+
+.card__button_mark:hover {
+  animation: hover-mark-button 0.4s forwards;
+}

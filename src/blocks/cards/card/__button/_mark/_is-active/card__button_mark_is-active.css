@@ -1,0 +1,4 @@
+.card__button_mark_is-active {
+  stroke-width: 0;
+  fill: #2f71e5;
+}
