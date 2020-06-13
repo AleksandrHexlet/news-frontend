@@ -1,2 +1,2 @@
-# news-frontend-
+# news-frontend
 news-frontend 
