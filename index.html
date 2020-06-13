@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Сервис позволяет находить новости и сохранять новости в личном кабинете" />
+    <meta name="keywords" content="новости последние новости, актуальные новости, news, news today" />
+    <meta name="author" content="Alex" />
+    <title>NewsExplorer</title>
+    <!-- <link rel="stylesheet" href="./style/main.18254ba842599b10a91a.css?2ff30fa0e2bbfc753474" /> -->
+    <link rel="stylesheet" href="../index/index.css" />
+    <link rel="shortcut icon" href="../../images/favicon.svg" type="image/svg">
+<link href="./style/main.18254ba842599b10a91a.css?2ff30fa0e2bbfc753474" rel="stylesheet"><link href="./style/saved_news.a1d9c5360cfca759e50e.css?2ff30fa0e2bbfc753474" rel="stylesheet"></head>
+</head>
+
+<body class="page">
+    <section class="main">
+        <div class="main__container">
+            <header style="display:none" class="header  header_saved-news">
+                <div class="header__container">
+                    <p class="header__logo"> <a href="./index.html" class="header__logo-link">NewsExplorer</a> </p>
+                    <nav class="menu">
+                        <div class="menu__container">
+                            <div class="menu__link menu__link_main"> <a href="./index.html"
+                                    class="menu__link_item menu__item">Главная</a> </div>
+                        </div>
+                    </nav>
+                    <button class="button menu__button">Авторизоваться</button>
+                    <button class="header__button header__button_hamburger"></button>
+                </div>
+            </header>
+            <header class="header header_saved-news">
+                <div class="header__container">
+                    <p class="header__logo"> <a href="./index.html" class="header__logo-link">NewsExplorer</a> </p>
+                    <nav class="menu">
+                        <div class="menu__container">
+                            <div class="menu__link menu__link_main menu__link_active"> <a href="./index.html"
+                                    class="menu__link-item menu__item"> Главная </a> </div>
+                            <div class="menu__link"> <a href="../saved-news/saved-news.html"
+                                    class="menu__link-item ">Сохранённые статьи</a> </div>
+                            <button class="button menu__button menu__button_logout"> <span
+                                    class="menu__user-name">Name</span> <span class="menu__logout-img"></span> </button>
+                        </div>
+                    </nav>
+                    <button class="header__button header__button_hamburger"></button>
+                </div>
+            </header>
+            <h1 class="main__title">Что в мире <br /> творится?</h1>
+            <p class="main__subtitle">Находите самые свежие статьи на любую тему и сохраняйте
+                <br /> в своём личном кабинете.</p>
+            <form class="search-form" novalidate>
+                <input type="text" class="search-form__field" placeholder="Введите тему новости" required minlength="2"
+                    maxlength="23" />
+                <button class="button search-form__button">Искать</button>
+            </form>
+        </div>
+    </section>
+    <section class="search-result">
+        <div class="loader">
+            <div class="loader__item"></div>
+            <p class="loader__text">Идет поиск новостей...</p>
+        </div>
+        <div class="search-result__container">
+            <div class="cards">
+                <h2 class="cards__title">Результаты поиска</h2>
+                <div class="cards__list">
+                    <article class="card">
+                        <a class="card__link" target="_blanck"
+                            href="https://www.rbc.ru/technology_and_media/30/05/2020/5ece45679a7947b3b2e9be7b"> <img
+                                class="card__img"
+                                src='https://s0.rbk.ru/v6_top_pics/resized/1180xH/media/img/5/46/755908716050465.jpg' ;
+                                src="" alt="SpaceX провела первый в истории частный пилотируемый запуск в космос">
+                            <div class="card__content">
+                                <time class="card__pub-time">1 июня, 2020</time>
+                                <h3 class="card__title">SpaceX провела первый в истории частный пилотируемый запуск в
+                                    космос</h3>
+                                <p class="card__text">Первый в истории частный пилотируемый запуск в космос</p>
+                                <p class="card__resource">rbc.ru</p>
+                            </div>
+                        </a>
+                        <div class="card__control">
+                            <button class="card__button card__button_mark 
+        ">
+                                <svg width="14" height="19">
+                                    <path d="M6.38 12.71L1 16.94V1h12v15.94l-5.38-4.23-.62-.48-.62.48z"></path>
+                                </svg>
+                            </button> <a class="card__button-info ">
+                                Войдите, чтобы сохранять статьи
+                            </a> </div>
+                        <p class="card__tag-name ">космос</p>
+                        <div class="card__loader">
+                            <p class="card__loader-text">Идет обработка...</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <a class="card__link" target="_blanck"
+                            href="https://www.rbc.ru/technology_and_media/12/06/2020/5ee363a39a794739ee1a645a?from=newsfeed">
+                            <img class="card__img"
+                                src='https://s0.rbk.ru/v6_top_pics/resized/1180xH/media/img/8/10/755919704492108.jpg' ;
+                                src="" alt="Sony презентовала PS5. Главное о приставке">
+                            <div class="card__content">
+                                <time class="card__pub-time">1 июня, 2020</time>
+                                <h3 class="card__title">Sony презентовала долгожданную новую модель своей приставки
+                                    PlayStation. Компания
+                                    является лидером российского рынка
+                                    консолей с долей более 80%</h3>
+                                <p class="card__text"></p>
+                                <p class="card__resource">rbc.ru</p>
+                            </div>
+                        </a>
+                        <div class="card__control">
+                            <button class="card__button card__button_mark 
+        ">
+                                <svg width="14" height="19">
+                                    <path d="M6.38 12.71L1 16.94V1h12v15.94l-5.38-4.23-.62-.48-.62.48z"></path>
+                                </svg>
+                            </button> <a class="card__button-info ">
+                                Войдите, чтобы сохранять статьи
+                            </a> </div>
+                        <p class="card__tag-name ">космос</p>
+                        <div class="card__loader">
+                            <p class="card__loader-text">Идет обработка...</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <a class="card__link" target="_blanck"
+                            href="https://www.iguides.ru/main/other/spacex_ilona_maska_zapustila_k_mks_svoy_pervyy_korabl_s_astronavtami_na_bortu/?sphrase_id=9054200">
+                            <img class="card__img"
+                                src='https://www.iguides.ru/upload/medialibrary/ad6/ad6cbef2ec58453a8422c47128e3aa68.jpg'
+                                ; src=""
+                                alt="SpaceX Илона Маска запустила к МКС свой первый корабль с астронавтами на борту">
+                            <div class="card__content">
+                                <time class="card__pub-time">1 июня, 2020</time>
+                                <h3 class="card__title">Компания Илона Маска запустила к МКС свой первый корабль с
+                                    астронавтами на борту</h3>
+                                <p class="card__text">Компания Илона Маска запустила к МКС свой первый корабль с
+                                    астронавтами на борту</p>
+                                <p class="card__resource">iguides.ru</p>
+                            </div>
+                        </a>
+                        <div class="card__control">
+                            <button class="card__button card__button_mark 
+        ">
+                                <svg width="14" height="19">
+                                    <path d="M6.38 12.71L1 16.94V1h12v15.94l-5.38-4.23-.62-.48-.62.48z"></path>
+                                </svg>
+                            </button> <a class="card__button-info ">
+                                Войдите, чтобы сохранять статьи
+                            </a> </div>
+                        <p class="card__tag-name ">космос</p>
+                        <div class="card__loader">
+                            <p class="card__loader-text">Идет обработка...</p>
+                        </div>
+                    </article>
+                </div>
+                <button class="button cards__button">Показать еще</button>
+            </div>
+        </div>
+    </section>
+    <section class="about-author">
+        <div class="about-author__container">
+            <picture class="about-author__img-wrapper">
+                <source srcset=""
+                    media="(max-width: 650px)" />
+                <source srcset=""
+                    media="(max-width: 900px)" /> <img class="about-author__img"
+                    src="" alt="Автор проекта" /> </picture>
+            <div class="about-author__content">
+                <h2 class="about-author__title">Об авторе</h2>
+                <p class="about-author__text">Добрый день! Я веб разработчик. Фронт пишу на нативном JS. Back на node.js
+                    с использованием express.js.</p>
+                <p class="about-author__text"> Данный проект был выполнен как учебный в Яндекс.Практикум <a
+                        href="https://praktikum.yandex.ru/" class="about__link" target="blanck">Яндекс.Практикум</a>
+                    Технологии: GIT, webpack, ООП. </p>
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+    <div class="footer__container">
+        <p class="footer__copyright">© 2020 Alex, Powered by News API</p>
+        <nav class="footer__useful-links">
+            <a href="./index.html" class="footer__useful-links-item">Главная</a>
+            <a href="https://praktikum.yandex.ru/" class="footer__useful-links-item"
+                target="blanck">Яндекс.Практикум</a>
+        </nav>
+        <div class="footer__channels">
+            <a href="https://github.com/AleksandrHexlet" class="footer__channels-link" target="blanck">
+                <div class="footer__channels-img footer__channels-img_github"></div>
+            </a>
+            <a href="https://www.facebook.com" class="footer__channels-link" target="blanck">
+                <div class="footer__channels-img footer__channels-img_facebook"></div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <section style="display: none;" class="popup popup_is-active">
+        <div class="popup__content popup__content_signup">
+            <div class="popup__loader">
+                <div class="popup__loader-item"></div>
+            </div>
+            <div class="popup__close"></div>
+            <h3 class="popup__title">Регистрация</h3>
+            <form class="popup__form">
+                <label class="popup__label">Email</label>
+                <input class="popup__input popup__input-type-email" placeholder="Введите почту" type="email">
+                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
+                </div>
+                <label class="popup__label">Пароль</label>
+                <input class="popup__input popup__input_type-password" placeholder="Введите пароль" type="password">
+                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
+                </div>
+                <label class="popup__label">Имя</label>
+                <input class="popup__input popup__input_type-name" placeholder="Введите своё имя" type="name">
+                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
+                </div>
+                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_form"></span>
+                </div>
+                <button type="button" class="button popup__button popup__button_signup"> Зарегистрироваться </button>
+                <p class="popup__alternative"> или <span
+                        class="popup__alternative-link popup__alternative-link_signin">Войти</span> </p>
+            </form>
+        </div>
+    </section>
+    <section style="display: none;" class="popup popup_is-active">
+        <div class="popup__content popup__content_signin">
+            <div class="popup__loader">
+                <div class="popup__loader-item"></div>
+            </div>
+            <div class="popup__close"></div>
+            <h3 class="popup__title">Вход</h3>
+            <form class="popup__form">
+                <label class="popup__label">Email</label>
+                <input class="popup__input popup__input-type-email" placeholder="Введите почту" type="email">
+                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
+                </div>
+                <label class="popup__label">Пароль</label>
+                <input class="popup__input popup__input_type-password" placeholder="Введите пароль" type="password">
+                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
+                </div>
+                <div class="popup__error-wrapper popup__error-wrapper_form"> <span
+                        class="popup__error-message popup__error-message_form"></span> </div>
+                <button type="button" class="button popup__button popup__button_signin popup__button_is-active"> Войти
+                </button>
+                <p class="popup__alternative"> или <span
+                        class="popup__alternative-link popup__alternative-link_signup">Зарегистрироваться</span> </p>
+            </form>
+        </div>
+    </section>
+    <section style="display: none;" class="popup popup_is-active ">
+        <div class="popup__content popup__content_successes popup__content_signin">
+            <div class="popup__close"></div>
+            <h3 class="popup__title popup__title_successes">Пользователь успешно зарегистрирован!</h3> <span
+                class="popup__alternative-link popup__alternative-link_successes popup__alternative-link_signin">Выполнить
+                вход</span>
+        </div>
+    </section>
+    <script src="js/main.c77c2bf6700a8e9552f0.js?2ff30fa0e2bbfc753474"></script>
+<script type="text/javascript" src="js/main.c77c2bf6700a8e9552f0.js?2ff30fa0e2bbfc753474"></script><script type="text/javascript" src="js/saved_news.23483a76a3d653fe33f1.js?2ff30fa0e2bbfc753474"></script></body>
+
+</html>

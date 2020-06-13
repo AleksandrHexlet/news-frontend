@@ -1,8 +1,0 @@
-.main__container {
-  display: flex;
-  flex-direction: column;
-  background-image: url('../../../images/main-background.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
