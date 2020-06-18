@@ -9,51 +9,49 @@
     <meta name="keywords" content="новости последние новости, актуальные новости, news, news today" />
     <meta name="author" content="Alex" />
     <title>NewsExplorer</title>
-    <link rel="stylesheet" href="./style/main.62cff4edf051fea5365d.css?7e5a8c1e9f0e9c2fb00c" />
+    <link rel="stylesheet" href="./style/main.5ce79d2ec78527a25ce8.css?a3292fbfbc320b34d12b" />
     <link rel="stylesheet" href="../index/index.css" />
     <link rel="shortcut icon" href="../../images/favicon.png" class="header__favicon" type="image/svg">
-<link href="./style/main.62cff4edf051fea5365d.css?7e5a8c1e9f0e9c2fb00c" rel="stylesheet"><link href="./style/saved_news.e5237e376ec53c0ce8f3.css?7e5a8c1e9f0e9c2fb00c" rel="stylesheet"></head>
+<link href="./style/main.5ce79d2ec78527a25ce8.css?a3292fbfbc320b34d12b" rel="stylesheet"><link href="./style/saved_news.c6620d6b5ebd120822db.css?a3292fbfbc320b34d12b" rel="stylesheet"></head>
 </head>
 
-<body class="page">
+<body style="display:none" class="page">
     <section class="main">
         <div class="main__container">
-            <header style="display:none" class="header  header_saved-news">
-                <div class="header__container">
-                    <p class="header__logo"> <a href="./index.html" class="header__logo-link">NewsExplorer</a> </p>
-                    <nav class="menu">
-                        <div class="menu__container">
-                            <div class="menu__link menu__link_main"> <a href="./index.html"
-                                    class="menu__link_item menu__item">Главная</a> </div>
-                        </div>
-                    </nav>
-                    <button class="button menu__button">Авторизоваться</button>
-                    <button class="header__button header__button_hamburger"></button>
+            
+<header class="header header_saved-news">
+    <div class="header__container">
+        <p class="header__logo">
+            <a href="./index.html" class="header__logo-link">NewsExplorer</a>
+        </p>
+        <nav class="menu">
+            <div class="menu__container">
+                <div class="menu__link menu__link_main">
+                    <a href="./index.html" class="menu__link-item menu__item">
+                        Главная
+                    </a>
                 </div>
-            </header>
-            <header class="header header_saved-news">
-                <div class="header__container">
-                    <p class="header__logo"> <a href="./index.html" class="header__logo-link">NewsExplorer</a> </p>
-                    <nav class="menu">
-                        <div class="menu__container">
-                            <div class="menu__link menu__link_main menu__link_active"> <a href="./index.html"
-                                    class="menu__link-item menu__item"> Главная </a> </div>
-                            <div class="menu__link"> <a href="../saved-news/saved-news.html"
-                                    class="menu__link-item ">Сохранённые статьи</a> </div>
-                            <button class="button menu__button menu__button_logout"> <span
-                                    class="menu__user-name">Name</span> <span class="menu__logout-img"></span> </button>
-                        </div>
-                    </nav>
-                    <button class="header__button header__button_hamburger"></button>
-                </div>
-            </header>
+            </div>
+        </nav>
+        <button class="header__button header__button_hamburger"></button>
+    </div>
+</header>
+
+
             <h1 class="main__title">Что в мире <br /> творится?</h1>
             <p class="main__subtitle">Находите самые свежие статьи на любую тему и сохраняйте
                 <br /> в своём личном кабинете.</p>
-            <form class="search-form" novalidate>
-                <input type="text" class="search-form__field" placeholder="Введите тему новости" required minlength="2"
-                    maxlength="23" />
-                <button class="button search-form__button">Искать</button>
+            <form class="search-form" name="searchForm" novalidate>
+                <input type="text"
+                 class="search-form__field" 
+                 name="searchField"
+                 placeholder="Введите тему новости" 
+                 required 
+                 minlength="2"
+                 maxlength="23" />
+
+
+                <button class="button search-form__button" name="searchButton">Искать</button>
             </form>
         </div>
     </section>
@@ -197,68 +195,97 @@
     </div>
 </footer>
 
-    <section style="display: none;" class="popup popup_is-active">
-        <div class="popup__content popup__content_signup">
-            <div class="popup__loader">
-                <div class="popup__loader-item"></div>
+<section class="popup"></section>
+<section class="popup-messages">
+    <div class="popup-messages__container">
+        <p class="popup-messages__message"></p>
+    </div>
+</section>
+<template class="template_popup_signin">
+    <div class="popup__content popup__content_signin">
+        <div class="popup__loader">
+            <div class="popup__loader-item"></div>
+        </div>
+        <div class="popup__close"></div>
+        <h3 class="popup__title">Вход</h3>
+        <form class="popup__form" name="signin" novalidate>
+            <label class="popup__label" for="email">Email</label>
+            <input class="popup__input popup__input-type-email" placeholder="Введите почту" name="email" type="email"
+                required
+                pattern="^[0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1}@([-0-9A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,}$" />
+            <div class="popup__error-wrapper">
+                <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
             </div>
-            <div class="popup__close"></div>
-            <h3 class="popup__title">Регистрация</h3>
-            <form class="popup__form">
-                <label class="popup__label">Email</label>
-                <input class="popup__input popup__input-type-email" placeholder="Введите почту" type="email">
-                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
-                </div>
-                <label class="popup__label">Пароль</label>
-                <input class="popup__input popup__input_type-password" placeholder="Введите пароль" type="password">
-                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
-                </div>
-                <label class="popup__label">Имя</label>
-                <input class="popup__input popup__input_type-name" placeholder="Введите своё имя" type="name">
-                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
-                </div>
-                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_form"></span>
-                </div>
-                <button type="button" class="button popup__button popup__button_signup"> Зарегистрироваться </button>
-                <p class="popup__alternative"> или <span
-                        class="popup__alternative-link popup__alternative-link_signin">Войти</span> </p>
-            </form>
-        </div>
-    </section>
-    <section style="display: none;" class="popup popup_is-active">
-        <div class="popup__content popup__content_signin">
-            <div class="popup__loader">
-                <div class="popup__loader-item"></div>
+            <label class="popup__label" for="password">Пароль</label>
+            <input class="popup__input popup__input_type-password" placeholder="Введите пароль" type="password"
+                name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*" required minlength="8" />
+            <div class="popup__error-wrapper">
+                <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
             </div>
-            <div class="popup__close"></div>
-            <h3 class="popup__title">Вход</h3>
-            <form class="popup__form">
-                <label class="popup__label">Email</label>
-                <input class="popup__input popup__input-type-email" placeholder="Введите почту" type="email">
-                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
-                </div>
-                <label class="popup__label">Пароль</label>
-                <input class="popup__input popup__input_type-password" placeholder="Введите пароль" type="password">
-                <div class="popup__error-wrapper"> <span class="popup__error-message popup__error-message_input"></span>
-                </div>
-                <div class="popup__error-wrapper popup__error-wrapper_form"> <span
-                        class="popup__error-message popup__error-message_form"></span> </div>
-                <button type="button" class="button popup__button popup__button_signin popup__button_is-active"> Войти
-                </button>
-                <p class="popup__alternative"> или <span
-                        class="popup__alternative-link popup__alternative-link_signup">Зарегистрироваться</span> </p>
-            </form>
+            <div class="popup__error-wrapper popup__error-wrapper_form">
+                <span class="popup__error-message popup__error-message_form" aria-live="polite"></span>
+            </div>
+            <button type="button" class="button popup__button popup__button_signin" name="submitButton" disabled>
+                Войти
+            </button>
+            <p class="popup__alternative">
+                или
+                <span class="popup__alternative-link popup__alternative-link_signup">Зарегистрироваться</span>
+            </p>
+        </form>
+    </div>
+</template>
+<template class="template_popup_signup">
+    <div class="popup__content popup__content_signup">
+        <div class="popup__loader">
+            <div class="popup__loader-item"></div>
         </div>
-    </section>
-    <section style="display: none;" class="popup popup_is-active ">
-        <div class="popup__content popup__content_successes popup__content_signin">
-            <div class="popup__close"></div>
-            <h3 class="popup__title popup__title_successes">Пользователь успешно зарегистрирован!</h3> <span
-                class="popup__alternative-link popup__alternative-link_successes popup__alternative-link_signin">Выполнить
-                вход</span>
-        </div>
-    </section>
-    <script src="js/main.c77c2bf6700a8e9552f0.js?7e5a8c1e9f0e9c2fb00c"></script>
-<script type="text/javascript" src="js/main.c77c2bf6700a8e9552f0.js?7e5a8c1e9f0e9c2fb00c"></script><script type="text/javascript" src="js/saved_news.23483a76a3d653fe33f1.js?7e5a8c1e9f0e9c2fb00c"></script></body>
+        <div class="popup__close"></div>
+        <h3 class="popup__title">Регистрация</h3>
+        <form class="popup__form" name="signup" novalidate>
+            <label class="popup__label" for="email">Email</label>
+            <input class="popup__input popup__input-type-email" placeholder="Введите почту" name="email" type="email"
+                required
+                pattern="^[0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1}@([-0-9A-Za-z]{1,}\.){1,3}[-A-Za-z]{2,}$" />
+            <div class="popup__error-wrapper">
+                <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
+            </div>
+            <label class="popup__label" for="password">Пароль</label>
+            <input class="popup__input popup__input_type-password" placeholder="Введите пароль" type="password"
+                name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*" minlength="8" />
+            <div class="popup__error-wrapper">
+                <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
+            </div>
+            <label class="popup__label" for="name">Имя</label>
+            <input class="popup__input popup__input_type-name" placeholder="Введите своё имя" type="name" name="name"
+                required minlength="2" maxlength="14" />
+            <div class="popup__error-wrapper">
+                <span class="popup__error-message popup__error-message_input" aria-live="polite"></span>
+            </div>
+            <div class="popup__error-wrapper">
+                <span class="popup__error-message popup__error-message_form" aria-live="polite"></span>
+            </div>
+            <button type="button" class="button popup__button popup__button_signup" name="submitButton" disabled>
+                Зарегистрироваться
+            </button>
+            <p class="popup__alternative">
+                или <span class="popup__alternative-link popup__alternative-link_signin">Войти</span>
+            </p>
+        </form>
+    </div>
+</template>
+<template class="template_popup_success">
+    <div class="popup__content popup__content_successes">
+        <div class="popup__close"></div>
+        <h3 class="popup__title popup__title_successes">Пользователь успешно зарегистрирован!</h3>
+        <span class="popup__alternative-link popup__alternative-link_successes popup__alternative-link_signin">Выполнить
+            вход</span>
+    </div>
+</template>
+
+
+
+    <script src="js/main.0c75c003cac642204e50.js?a3292fbfbc320b34d12b"></script>
+<script type="text/javascript" src="js/main.0c75c003cac642204e50.js?a3292fbfbc320b34d12b"></script><script type="text/javascript" src="js/saved_news.c36ee0836ffb9298f172.js?a3292fbfbc320b34d12b"></script></body>
 
 </html>
