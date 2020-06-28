@@ -33,9 +33,9 @@ https://aleksandrhexlet.github.io/news-frontend/
        npm install
    ```
 3. Запустить локальный сервер
-   ```
+
        npm run dev
-   ```
+
 
 ## Публикация на GitHub Pages
 
@@ -43,27 +43,27 @@ https://aleksandrhexlet.github.io/news-frontend/
 2. Склонировать репозиторий
 3. Доставить отсутствующие модули npm (`npm install`)
 4. Собрать проект
-   ```
+   
        npm run build
-   ```
+   
 5. Запушить собранный проект на GitHub
-   ```
+   
        npm run deploy
-   ```
+   
 
 ## Внесение изменений
 
 При необходимости, после внесения изменений, запустить тестирование
 
-    ```
+    
         npm run eslint
-    ```
+
 
 Если обнаружены ошибки, тогда можно попробовать автоматически исправить проблемы
 
-    ```
+    
         npm run eslintFix
-    ```
+    
 
 
 ### Поиск новостей
