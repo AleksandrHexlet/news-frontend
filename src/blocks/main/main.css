@@ -1,9 +1,0 @@
-@import url('./__container/main__container.css');
-@import url('./__title/main__title.css');
-@import url('./__subtitle/main__subtitle.css');
-@import url('./media/media.css');
-
-.main {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  color: #1a1b22;
-}
