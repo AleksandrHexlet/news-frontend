@@ -28,7 +28,7 @@ https://aleksandrhexlet.github.io/news-frontend/
 ## Локальный запуск проекта
 
 1. Склонировать репозиторий
-2. Доставить отсутствующие модули npm
+2. Закачать модули npm
 
        npm install
    
@@ -41,7 +41,7 @@ https://aleksandrhexlet.github.io/news-frontend/
 
 1. Сделать форк проекта
 2. Склонировать репозиторий
-3. Доставить отсутствующие модули npm (`npm install`)
+3. Закачать модули npm (npm installcd )
 4. Собрать проект
    
        npm run build
