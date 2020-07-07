@@ -1,0 +1,11 @@
+@media screen and (max-width: 900px) {
+  .saved-cards__server-messages {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .saved-cards__server-messages {
+    padding: 24px 16px;
+  }
+}
